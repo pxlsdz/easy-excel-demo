@@ -36,7 +36,7 @@ public class TestController {
 
             JSONArray dataList = jsonObject.getJSONArray("dataList");
             List<List<Object>> excelDataList = new ArrayList<>();
-            head.stream().forEach(item -> {
+            dataList.stream().forEach(item -> {
                 List<Object> dataItem = new ArrayList<>();
                 dataItem.add(item);
                 excelDataList.add(dataItem);
